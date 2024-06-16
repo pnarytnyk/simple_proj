@@ -1,0 +1,9 @@
+AUTOMAKE_OPTIONS = foreign
+bin_PROGRAMS = helloworld
+helloworld_SOURCES = hello_world.c hello_func.c
+include_HEADERS = hello_make.h
+
+clean-all:
+	rm -f $(bin_PROGRAMS) aclocal.m4 compile configure depcomp install-sh makefile missing *.status *.log *.o *.in
+	rm -rf autom4te.cache .deps
+	rm -f /usr/local/bin/$(bin_PROGRAMS) /usr/local/include/$(include_HEADERS)
