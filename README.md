@@ -8,7 +8,7 @@ aclocal
 ```
 
 ```
-autoconfig
+autoconf
 ```
 
 ```
@@ -16,7 +16,7 @@ automake --add-missing
 ```
 
 ```
-./config
+./configure
 ```
 
 Run
